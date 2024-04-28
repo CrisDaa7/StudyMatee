@@ -1,0 +1,210 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../static/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    flex-basis: calc(33.333% - 20px);
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilos para los campos de entrada */
+.input-field {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* Estilos para el formulario */
+.form-container {
+    background-color: #ffffff; /* Blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form-container input[type="text"],
+.form-container button[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px); /* Tamaño ajustado para el borde */
+    box-sizing: border-box;
+}
+
+.form-container input[type="text"]::placeholder {
+    color: #999; /* Color del placeholder */
+}
+
+.form-container button[type="submit"] {
+    background-color: #283e4a; /* Azul marino */
+    color: white; /* Blanco */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #1c2b33; /* Color de fondo al pasar el ratón */
+}
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-header, .table-data {
+    padding: 12px 15px; /* Aumenta el padding para mayor espacio alrededor del contenido */
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-header {
+    background-color:#283e4a; /* Azul marino */
+    color: white; /* Blanco */
+}
+
+.table-data:hover {
+    background-color: #f0f0f0; /* Gris claro */
+}
+
+/* Ajustes para la primera columna */
+.table-data:first-child {
+    border-top-left-radius: 6px; /* Añade bordes redondeados a la esquina superior izquierda */
+    border-bottom-left-radius: 6px; /* Añade bordes redondeados a la esquina inferior izquierda */
+}
+
+/* Ajustes para la última columna */
+.table-data:last-child {
+    border-top-right-radius: 6px; /* Añade bordes redondeados a la esquina superior derecha */
+    border-bottom-right-radius: 6px; /* Añade bordes redondeados a la esquina inferior derecha */
+}
+
+/* Estilos para los botones dentro de la tabla */
+.table-data button {
+    background-color: #283e4a; /* Azul marino */
+    border: none;
+    color: white; /* Blanco */
+    padding: 8px 12px; /* Ajusta el padding para que los botones sean más compactos */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px; /* Reduce el tamaño de la fuente para los botones */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para los botones dentro de la tabla al pasar el ratón */
+.table-data button:hover {
+    background-color: #283e4a; /* Azul marino más oscuro */
+}
+.robot-img {
+    height: 150px;
+    margin-right: 10px;
+    float: left;
+}
+.google-search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.search-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+
